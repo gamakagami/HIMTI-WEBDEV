@@ -1,1 +1,103 @@
+body {
+    margin: 0;
+}
+
+.contact-page {
+    background-color: #003459;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 137px;
+    flex-grow: 1;
+}
+
+.contact-us {
+    width: 1367px;
+    height: 82px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    background: #003459;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.contact-description {
+    width: 911px;
+    height: 135px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+}
+
+.form-field {
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-bottom: 30px;
+}
+
+.form-field input {
+    width: 925px;
+    height: 62px;
+    border: none;
+    outline: none;
+    padding: 6px 33px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    color: #747373;
+    background: transparent;
+}
+
+.form-field textarea {
+    width: 925px;
+    height: 393px;
+    border: none;
+    outline: none;
+    padding: 6px 33px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    color: #747373;
+    background: transparent;
+}
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.send-button {
+    width: 350px;
+    height: 58px;
+    padding: 12px 55.61px 13px 55.61px;
+    border-radius: 10px;
+    background: #808AE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+
 
