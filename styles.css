@@ -5,7 +5,7 @@ body {
     background-color: #003459;
     color: #ffffff;
     height: 809px;
-    overflow: hidden;
+    overflow: scroll;
     top: 1856px;
 }
 
@@ -138,6 +138,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .send-button {
@@ -158,4 +159,27 @@ body {
     border: none;
 }
 
+footer{
+    
+    margin-top: 5%;
+    padding-bottom: 20%;
+    background-color:#FFFFFF;
+    color: black;
+    position: relative;
+    
+}
 
+.footer-icon{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1%;
+    max-width: 1728px;
+    text-align: center;
+}
+
+.footer-icon img{
+    max-width:  700px;
+    max-height: 700px;
+}
