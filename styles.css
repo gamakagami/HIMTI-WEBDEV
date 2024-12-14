@@ -1,64 +1,314 @@
+/* Style for the navbar */
+.navbar {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items */
+    background-color: #f8f9fa; /* Optional background color */
+    padding: 15px 30px; /* Increase padding for a larger navbar */
+    font-family: 'Space Grotesk', sans-serif; /* Use the specified font */
+}
+
+/* Style for the logo */
+.navbar .logoo {
+    height: 60px; /* Increase the height of the logo */
+    margin-right: 30px; /* Add spacing after the logo */
+}
+
+/* Style for navbar items */
+.navbar div {
+    font-size: 1.5rem; /* Increase font size */
+    margin-left: 40px; /* Add a larger fixed distance from the previous item */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-weight: 600; /* Make the font a bit bolder */
+}
+
+/* Optional: Add hover effect */
+.navbar div:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Style for the content section */
+.HIMTI-competition {
+    display: flex; /* Use flexbox to align text and image side by side */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Keep space between text and image */
+    padding: 0 125px; /* Increase left and right padding to move content toward the center */
+    text-align: center; /* Center the text inside */
+}
+
+/* Style for the text section */
+.HIMTI-competition .text {
+    max-width: 50%; /* Restrict the width of the text section */
+    font-family: 'Space Grotesk', sans-serif; /* Use the specified font */
+    font-size: 1.8rem; /* Adjust font size for headings */
+    line-height: 1.5; /* Improve line spacing */
+    font-weight: 600; /* Set the text to bold */
+}
+
+/* Style for the image */
+.HIMTI-competition .picture img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Optional: Make sure the image is responsive and aligns properly */
+@media screen and (max-width: 768px) {
+    .HIMTI-competition {
+        flex-direction: column; /* Stack the text and image on small screens */
+        align-items: center; /* Center align content */
+    }
+
+    .HIMTI-competition .picture img {
+        max-width: 80%; /* Make image smaller on small screens */
+    }
+}
+
+/* Adjust the HIMTI text (a1) to move it a little bit to the left */
+.a1 {
+    font-weight: 900;
+    font-size: 7rem;
+    color: #003459;
+}
+
+
+.a2{
+    font-weight: 500;}
+
+/* Section styling */
+.competition-sect {
+    position: relative; /* Ensure it doesn’t disrupt other elements */
+    margin: 50px 0; /* Add spacing around this section to separate it */
+    padding: 4rem 12rem; /* Maintain consistent padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #808AE7;
+    z-index: 1; /* Prevent overlap issues */
+}
+
+/* Adjust the parent container to manage spacing */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #003459;
-    color: #ffffff;
-    height: 809px;
-    overflow: scroll;
-    top: 1856px;
-}
-
-.container {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 1728px;
-    text-align: center;
-}
-
-.logo {
-    position: absolute;
-    top: 220px;
-    position: relative;
-    right: 430px;
-    top: 540px;
-}
-
-.logo img {
-    max-width: 300px;
-    margin-right: 200px;
-}
-
-h1 {
-    font-size: 64px;
-    margin-bottom: 50px;
-    white-space: nowrap;
-}
-
-p {
-    font-size: 27px;
-    line-height: 1.2;
-    word-spacing: 5px;
-    margin: 10px auto;
-    width: 100%;
-    max-width: 800px;
-    position: relative;
-    left: 200px;
-    white-space: nowrap;
     font-family: 'Space Grotesk', sans-serif;
-    text-align: right;
 }
 
-.highlight {
+.compet-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    max-width: 1800px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px; /* Add spacing to ensure no crowding */
+}
+
+.cardarrangement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+}
+
+/* Ensure layout spacing for all screens */
+@media only screen and (max-width: 1533px) {
+    .compet-title {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .cardarrangement {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 844px) {
+    .competition-sect {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .compet-title {
+        font-size: 2.5rem;
+    }
+    .competcard {
+        scale: 0.9;
+    }
+}
+/* Style for competition cards */
+/* Style for competition cards */
+/* Style for competition cards */
+.competcard {
+    background-color: white; /* Set background to white */
+    padding: 10px; /* Reduce padding for smaller size */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center; /* Center the text content */
+    transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+    width: 300px; /* Set fixed width for smaller size */
+    margin: 0 auto; /* Center cards horizontally */
+}
+
+/* Add hover effect for cards */
+.competcard:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+}
+
+/* Ensure card images are well-aligned */
+.competcard img {
+    border-radius: 8px; /* Optional: rounded corners for images */
+    max-width: 100%; /* Ensure images fit the card width */
+}
+
+/* Ensure consistent spacing for card title */
+.competcard .titlecard {
+    font-size: 1.1rem; /* Adjust font size for smaller cards */
     font-weight: bold;
+    margin-top: 10px; /* Add spacing above the title */
 }
 
-body {
-    margin: 0;
+/* Ensure consistent spacing for card text */
+.competcard p {
+    font-size: 0.9rem; /* Adjust font size for smaller cards */
+    color: #555; /* Use a subtle color for the text */
+    line-height: 1.4; /* Improve readability */
+    margin: 10px 0; /* Add spacing above and below the paragraph */
 }
+
+/* Style for the "Learn More" button */
+.competcard .learnmore {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 8px 16px; /* Reduce padding for smaller button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 0.9rem; /* Adjust font size for smaller button */
+    font-weight: bold;
+    margin-top: 10px; /* Add spacing above the button */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+/* Hover effect for the button */
+.competcard .learnmore:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Adjust card arrangement for a single row */
+.cardarrangement {
+    display: flex;
+    flex-direction: row; /* Align cards in a single row */
+    gap: 20px; /* Add space between cards */
+    justify-content: center; /* Center the row */
+    align-items: center; /* Align items vertically */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%;
+    margin-bottom: 30px; /* Add additional space below the card row */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .competcard {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .cardarrangement {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+}
+
+
+/* About section styling */
+.about-section {
+    margin-top: 0;
+    background-color: #003459; /* Dark blue background */
+    color: white; /* White text */
+    padding: 50px 20px; /* Spacing around the section */
+    text-align: center; /* Center-align text */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center the section */
+}
+
+.about-logo {
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10;
+}
+
+.about-container h2 {
+    font-size: 2.5rem; /* Heading size */
+    font-weight: 700; /* Bold heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-content h2 {
+    font-size: 2.5rem; /* Heading size */
+    font-weight: 700; /* Bold heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-content p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+    line-height: 1.8; /* Improve readability */
+    max-width: 800px; /* Restrict width for better layout */
+    margin: 0 auto; /* Center the text */
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
+
+.competition-sect, .about-section {
+    margin: 0; /* Remove extra margin */
+    padding-bottom: 0; /* Ensure no padding at the bottom */
+}
+
+.about-section {
+    margin-top: 0;
+    background-color: #003459; /* Dark blue background */
+    color: white; /* White text */
+    padding: 50px 20px; /* Spacing around the section */
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-around; /* Space items evenly */
+    text-align: left; /* Left-align text */
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between items */
+    margin: 0 auto; /* Center the section */
+}
+
+.about-logo {
+    width: 250px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-content{
+    display: flex;
+}
+
 
 .contact-page {
     background-color: #003459;
@@ -159,27 +409,57 @@ body {
     border: none;
 }
 
-footer{
-    
-    margin-top: 5%;
-    padding-bottom: 20%;
-    background-color:#FFFFFF;
-    color: black;
-    position: relative;
-    
-}
-
-.footer-icon{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1%;
-    max-width: 1728px;
+/* Footer styling */
+.footer-page {
+    background-color: #FFFFFF; /* Dark blue background */
+    color: #000; /* White text */
+    display: flex;
+    justify-content: space-between; /* Align items to the space between logos and social media */
     text-align: center;
 }
 
-.footer-icon img{
-    max-width:  700px;
-    max-height: 700px;
+.footer-logo {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.footer-logo img {
+    height: 200px;
+    width: auto;
+    margin: 10px;
+}
+
+.sosmed {
+    display: flex;
+    flex-direction: column; /* Change to column to make them inline */
+    text-align: right; /* Right align the text to match with social media position */
+    margin: 50px;
+    padding-right: 10%;
+}
+
+.sosmed .text-instagram, .sosmed .text-youtube, .sosmed .text-tiktok {
+    font-size: 1.2rem; /* Adjust size for readability */
+    font-weight: 500; /* Slightly bold text */
+    margin-left: auto; /* Align text to the right */
+}
+
+.copyright-container {
+    font-size: 1rem; /* Adjust size for readability */
+    color: #000; /* Lighter grey for copyright text */
+    margin-top: 10px;
+}
+
+.text-youtube{
+    padding-right: 10%;
+}
+
+.text-tiktok{
+    padding-right: 7%;
+}
+
+.copyright-container{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 5%;
 }
