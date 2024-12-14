@@ -5,12 +5,14 @@
     background-color: #f8f9fa; /* Optional background color */
     padding: 15px 30px; /* Increase padding for a larger navbar */
     font-family: 'Space Grotesk', sans-serif; /* Use the specified font */
+    z-index: 101;
 }
 
 /* Style for the logo */
 .navbar .logoo {
     height: 60px; /* Increase the height of the logo */
     margin-right: 30px; /* Add spacing after the logo */
+    z-index: 100;
 }
 
 /* Style for navbar items */
@@ -19,6 +21,7 @@
     margin-left: 40px; /* Add a larger fixed distance from the previous item */
     cursor: pointer; /* Change the cursor to a pointer on hover */
     font-weight: 600; /* Make the font a bit bolder */
+    z-index: 100;
 }
 
 /* Optional: Add hover effect */
@@ -33,6 +36,7 @@
     justify-content: space-between; /* Keep space between text and image */
     padding: 0 125px; /* Increase left and right padding to move content toward the center */
     text-align: center; /* Center the text inside */
+    z-index: 100;
 }
 
 /* Style for the text section */
@@ -42,6 +46,7 @@
     font-size: 1.8rem; /* Adjust font size for headings */
     line-height: 1.5; /* Improve line spacing */
     font-weight: 600; /* Set the text to bold */
+    z-index: 100;
 }
 
 /* Style for the image */
@@ -84,7 +89,7 @@
     justify-content: space-evenly;
     align-items: center;
     background: #808AE7;
-    z-index: 1; /* Prevent overlap issues */
+    z-index: 2; /* Prevent overlap issues */
 }
 
 /* Adjust the parent container to manage spacing */
@@ -462,4 +467,47 @@ body {
     text-align: center;
     font-size: 30px;
     padding-bottom: 5%;
+}
+
+
+.pol-1, .pol-2, .pol-3{
+    position: absolute;
+    z-index: 3;
+}
+
+.pol-1{
+    right: 0;
+    bottom: -150px;
+}
+
+.pol-2{
+    top: 0;
+    right: 550px;
+}
+
+.pol-3{
+    left: 0;
+    bottom: -150px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .pol-1{
+        scale: 0.75;
+        right: -45px;
+        bottom: -300px;
+    }
+    
+    .pol-2{
+        display: none;
+    }
+    
+    .pol-3{
+        scale: 0.75;
+        left: -50px;
+        bottom: -300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pol-1,.pol-3{display: none}
 }
