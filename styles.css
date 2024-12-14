@@ -2,10 +2,10 @@
 .navbar {
     display: flex; /* Use flexbox for horizontal alignment */
     align-items: center; /* Vertically align items */
-    background-color: #f8f9fa; /* Optional background color */
+    background-color: #FFFFFF; /* Optional background color */
     padding: 15px 30px; /* Increase padding for a larger navbar */
     font-family: 'Space Grotesk', sans-serif; /* Use the specified font */
-    z-index: 101;
+    z-index: 200000;
 }
 
 /* Style for the logo */
@@ -470,38 +470,38 @@ body {
 }
 
 
-.pol-1, .pol-2, .pol-3{
+.pol1, .pol2, .pol3{
     position: absolute;
     z-index: 3;
 }
 
-.pol-1{
+.pol1{
     right: 0;
     bottom: -150px;
 }
 
-.pol-2{
+.pol2{
     top: 0;
     right: 550px;
 }
 
-.pol-3{
+.pol3{
     left: 0;
     bottom: -150px;
 }
 
 @media only screen and (max-width: 1300px) {
-    .pol-1{
+    .pol1{
         scale: 0.75;
         right: -45px;
         bottom: -300px;
     }
     
-    .pol-2{
+    .pol2{
         display: none;
     }
     
-    .pol-3{
+    .pol3{
         scale: 0.75;
         left: -50px;
         bottom: -300px;
@@ -509,5 +509,5 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-    .pol-1,.pol-3{display: none}
+    .pol1,.pol3{display: none}
 }
