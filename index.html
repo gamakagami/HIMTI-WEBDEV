@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link for external CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <title>Internship - Kelompok 13</title>
 </head>
 <body>
+    <!-- Main container -->
     <div class="container">
-        
         <!-- Navbar section -->
         <div class="navbar">
             <img src="himti_logo.png" class="logoo" alt="HIMTI Logo">
-            <div class="HOME">Home</div>
-            <div class="events">Events</div>
-            <div class="about">About</div>
-            <div class="contact">Contact</div>
+            <div class="HOME" data-target="home">Home</div>
+            <div class="events" data-target="events">Events</div>
+            <div class="about" data-target="about">About</div>
+            <div class="contact" data-target="contact">Contact</div>
         </div>
+        
 
         <!-- HIMTI competition section -->
-        <div class="HIMTI-competition">
+        <div id="home" class="HIMTI-competition">
             <div class="text">
                 <h1><span class="a1">HIMTI</span><br><span class="a2">COMPETITION</span></h1>
                 <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
@@ -60,7 +62,7 @@
         </section>
 
         <!-- About section -->
-        <section class="about-section">
+        <section id="about" class="about-section">
             <div class="about-container">
                 <h2>ABOUT HIMTI COMPETITION</h2>
                 <div class="about-content">
@@ -77,7 +79,7 @@
         </section>
 
         <!-- Contact Us -->
-        <div class="contact-page">
+        <div id="contact" class="contact-page">
             <div class="contact-us">CONTACT US</div>
             <div class="contact-description">We'd love to hear from you! Whether you have questions, feedback, or need assistance, please feel free to reach out. Enter your email below, and our team will get back to you as soon as possible.</div>
             <form action=" " method="POST">
@@ -97,6 +99,7 @@
         </div>
 
         <!-- Footer -->
+<!-- Footer -->
 <div class="footer-page">
     <div class="footer-logo">
         <img src="https://s3-alpha-sig.figma.com/img/0d2e/844c/dcbb958e20bb01c9bf459a8e49ede91c?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C4FDiHf2KiJAQD64jF3CT0NVgt4EvQc-6-yV-lKjIPqtHnmKlAMpU50FXYfGvCm-wWbB7hVfs05Vp-ZjO5nnFY4rSistus4QpANucGAfdPGxmlQpvzGziK35nDIJlGaADZeW37ZdgjSMK5YvoYmOujzhxw1DJjiWKBRYAfihgkIhgxuJz~~lW-KRryX2oTesviGmZ8lGdgCSSSkG3-XrF89TkIWORtMeGKtsBASdbV6IoKyKuq9y4hFV7Hg2KNkfVdPh-~10EJCdmmRmCFrGJfFievTDl0~MDi3jT~uC6CvNqFiKwwHFX4hQt6IeHjACHT1Y6anT~ZKhF4VwJMiaiw__" alt="BINUS-logo" height="100" width="100">
@@ -111,4 +114,6 @@
 <div class="copyright-container">©Copyright 2024 HIMTI BINUS</div>
     </div>
 </body>
+<script src="script.js"></script>
+
 </html>
